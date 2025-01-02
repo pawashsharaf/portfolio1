@@ -146,11 +146,30 @@
                           <p><a href="mailto:sharoffhoney444@gmail.com">sharoffhoneysharoff444@gmail.com</a></p>
                         </div>
                       </div>
-                      <div class="row">
+                     
                         <div class="col-12 col-md-6 single-info"> <span>Age:</span> <p id="age"></p> </div>
-                        </div>
-                      <script> function calculateAge(birthdate) { const birthDate = new Date(birthdate); const today = new Date(); let age = today.getFullYear() - birthDate.getFullYear(); const monthDifference = today.getMonth() - birthDate.getMonth(); if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) { age--; } return age; } // Your date of birth const birthdate = '2003-05-12'; document.getElementById('age').textContent = calculateAge(birthdate); </script>
-                        <div class="col-12 col-md-6 single-info"><span>From:</span>
+                       
+                      <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      function calculateAge(birthdate) {
+        const birthDate = new Date(birthdate);
+        const today = new Date();
+        let age = today.getFullYear() - birthDate.getFullYear();
+        const monthDifference = today.getMonth() - birthDate.getMonth();
+
+        if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
+          age--;
+        }
+
+        return age;
+      }
+
+      // Your date of birth
+      const birthdate = '2003-05-12';
+      document.getElementById('age').textContent = calculateAge(birthdate);
+    });
+  </script>   
+                      <div class="col-12 col-md-6 single-info"><span>From:</span>
                           <p>Bilaspur, India</p>
                         </div>
                       </div>
@@ -365,6 +384,7 @@
                 <!-- Education part-->
                 <div class="col-12 col-md-6">
                   <div class="col-block education">
+                    
                     <h3 class="col-title">Education</h3>
                     <div class="resume-item"><span class="item-arrow"></span>
                       <h5 class="item-title">Computer Science</h5><span class="item-details">LCIT BILASPUR C.G. INDIA / 2021 - 2025</span>
