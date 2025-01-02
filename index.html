@@ -147,9 +147,9 @@
                         </div>
                       </div>
                       <div class="row">
-                        <div class="col-12 col-md-6 single-info"><span>Age:</span>
-                          <p>20</p>
+                        <div class="col-12 col-md-6 single-info"> <span>Age:</span> <p id="age"></p> </div>
                         </div>
+                      <script> function calculateAge(birthdate) { const birthDate = new Date(birthdate); const today = new Date(); let age = today.getFullYear() - birthDate.getFullYear(); const monthDifference = today.getMonth() - birthDate.getMonth(); if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) { age--; } return age; } // Your date of birth const birthdate = '2003-05-12'; document.getElementById('age').textContent = calculateAge(birthdate); </script>
                         <div class="col-12 col-md-6 single-info"><span>From:</span>
                           <p>Bilaspur, India</p>
                         </div>
@@ -241,7 +241,7 @@
                       <div class="review-client">
                         <div class="media"><img class="img-fluid rounded-circle client-avatar" src="https://static.vecteezy.com/system/resources/previews/000/649/115/original/user-icon-symbol-sign-vector.jpg" alt="Client">
                           <div class="client-details">
-                            <h6 class="client-name">Aryan</h6><span class="client-role">Envato Customer</span>
+                            <h6 class="client-name">Aryan</h6><span class="client-role">Customer</span>
                           </div>
                         </div>
                       </div><i class="icon ion-md-quote review-icon"></i>
@@ -271,7 +271,7 @@
                       <div class="review-client">
                         <div class="media"><img class="img-fluid rounded-circle client-avatar" src="https://static.vecteezy.com/system/resources/previews/000/649/115/original/user-icon-symbol-sign-vector.jpg" alt="Client">
                           <div class="client-details">
-                            <h6 class="client-name">Vinay</h6><span class="client-role">Envato Customer</span>
+                            <h6 class="client-name">Vinay</h6><span class="client-role">Customer</span>
                           </div>
                         </div>
                       </div><i class="icon ion-md-quote review-icon"></i>
